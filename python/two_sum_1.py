@@ -10,4 +10,3 @@ class Solution(object):
             else:
                 d[num] = idx
             idx = idx + 1
-        
