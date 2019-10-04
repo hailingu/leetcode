@@ -13,11 +13,8 @@ class Solution(object):
         
         p = [0] * len(nStr)
         p[0] = 1
-        idt = 0
-        mx = 0
-        hId = 0
-        hmx = 0
-
+        idt, mx, hId, hmx = 0, 0, 0, 0
+        
         i = 1
         while i < len(nStr):
             p[i] = 1 if i < mx else min(p[2 * idt -i], mx - i)
